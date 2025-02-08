@@ -1,0 +1,57 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ambiente Laravel
+.env
+.env*.local
+.env*.backup
+.phpunit.result.cache
+
+# Dependências
+/node_modules
+/vendor
+/public/storage
+/public/hot
+
+# Arquivos de build
+/public/css
+/public/js
+/public/mix-manifest.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Armazenamento local
+/storage/*.key
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Arquivos de log
+*.log
+*.cache
+
+# Arquivos de IDE
+.idea
+.vscode
+.phpstorm.meta.php
+_ide_helper.php
+
+# Arquivos temporários
+*.swp
+*.swo
+*.swn
+
+# Arquivos de debug
+debugbar*.json
+
+# Arquivos de uploads pesados (imagens/vídeos)
+/storage/app/public/uploads/*
+!/storage/app/public/uploads/.gitkeep
+
+# Arquivos de cache do composer
+/composer.lock
+
+# Arquivos de testes
+/coverage

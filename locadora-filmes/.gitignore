@@ -1,0 +1,39 @@
+/node_modules
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+/.vagrant
+
+# Laravel specific
+/bootstrap/cache/*
+/storage/framework/views/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/logs/*
+/public/css
+/public/js
+/public/hot
+/public/storage
+
+# SQLite
+/database/database.sqlite
+/database/*.sqlite*
+
+# Testing
+/coverage
+
+# Laravel Sail
+/.docker
+
+# macOS
+.DS_Store
