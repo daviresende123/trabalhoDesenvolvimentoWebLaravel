@@ -25,8 +25,11 @@ Route::middleware('auth')->group(function () {
 
 // Admin
 Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
-    // CRUD Filmes
-    Route::resource('movies', MovieController::class);
+    Route::get('/movies', [MovieController::class, 'index'])->name('admin.movies.index');
+    Route::get('/movies/create', [MovieController::class, 'create'])->name('admin.movies.create');
+    Route::post('/movies', [MovieController::class, 'store'])->name('admin.movies.store');
+    Route::get('/movies/{movie}/edit', [MovieController::class, 'edit'])->name('admin.movies.edit');
+    Route::put('/movies/{movie}', [MovieController::class, 'update'])->name('admin.movies.update');
+    Route::delete('/movies/{movie}', [MovieController::class, 'destroy'])->name('admin.movies.destroy');
 });
-
 require __DIR__.'/auth.php';
