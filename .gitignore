@@ -1,57 +1,23 @@
-# Arquivos do sistema operacional
-.DS_Store
-Thumbs.db
-
-# Ambiente Laravel
-.env
-.env*.local
-.env*.backup
-.phpunit.result.cache
-
-# Dependências
+/.phpunit.cache
 /node_modules
-/vendor
-/public/storage
+/public/build
 /public/hot
-
-# Arquivos de build
-/public/css
-/public/js
-/public/mix-manifest.json
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Armazenamento local
+/public/storage
 /storage/*.key
-/storage/framework/cache/data/*
-/storage/framework/sessions/*
-/storage/framework/views/*
-
-# Arquivos de log
-*.log
-*.cache
-
-# Arquivos de IDE
-.idea
-.vscode
-.phpstorm.meta.php
-_ide_helper.php
-
-# Arquivos temporários
-*.swp
-*.swo
-*.swn
-
-# Arquivos de debug
-debugbar*.json
-
-# Arquivos de uploads pesados (imagens/vídeos)
-/storage/app/public/uploads/*
-!/storage/app/public/uploads/.gitkeep
-
-# Arquivos de cache do composer
-/composer.lock
-
-# Arquivos de testes
-/coverage
+/storage/pail
+/vendor
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/auth.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
